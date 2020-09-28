@@ -9,6 +9,9 @@
 // -----------------------------------------------------------------
 function greet(list) {
   // list is an array of strings
+  const result = list.map(item => 'Hello'.concat(" ", item));
+
+  return result;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

@@ -7,6 +7,18 @@
 // -----------------------------------------------------------------
 function calculateAverage(grades) {
   // grades is an array of numbers
+
+  	let total = 0;
+
+	let test  = grades.filter(function(grade){
+	   		total+=grade;
+	   		
+	   });
+
+	let average = total/grades.length;
+
+
+  	return Math.round(average);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

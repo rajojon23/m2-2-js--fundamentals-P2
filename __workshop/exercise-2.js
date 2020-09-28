@@ -6,7 +6,7 @@
 //
 // Edit only the code between the lines (below)
 function getMax(num1, num2) {
-  // your code here...
+	return Math.max(num1, num2)
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

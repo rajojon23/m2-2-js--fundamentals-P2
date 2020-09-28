@@ -14,6 +14,36 @@
 // -----------------------------------------------------------------
 function getLetterGrade(grades) {
   // grades is an array of numbers
+  	let letter = "A";
+  	let total = 0;
+
+	let test  = grades.filter(function(grade){
+	   		total+=grade;
+	   		
+	   });
+
+	let average = total/grades.length;
+
+	if (average < 90) {
+		letter = "B";
+
+		if(average < 80){
+			letter = "C";
+
+			if (average < 70) {
+				letter = "D";
+				
+				if (average < 60) {
+					letter = "F";
+					
+				}
+			}
+
+
+		}
+	}
+
+  	return letter ;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

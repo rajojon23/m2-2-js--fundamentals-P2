@@ -10,7 +10,12 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
-  // complete the function
+	let new_array = array; 
+
+ let index =  new_array.indexOf(string);
+  new_array.splice(index, 1);
+
+ 	return new_array;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

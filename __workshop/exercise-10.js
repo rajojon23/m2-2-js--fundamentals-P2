@@ -9,6 +9,17 @@
 // -----------------------------------------------------------------
 function allLong(list) {
   // list is an array of strings
+
+  	let result = true;
+   let test  = list.filter(function(name){
+   		if ( name.length < 5) {
+          	result = false;
+   		}
+   		
+   });
+
+
+   return result;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
