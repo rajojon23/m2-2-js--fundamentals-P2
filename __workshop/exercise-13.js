@@ -7,6 +7,8 @@
 // -----------------------------------------------------------------
 function countBs(str) {
   // str is a string
+  let result = str.split('B').length-1;
+  return result;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

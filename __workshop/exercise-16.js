@@ -11,7 +11,32 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function findNumbers(num1, num2) {
-  // num1 and num2 are Numbers
+	let new_array = [];
+	for (let i = num1; i <= num2; i++) {
+		let num_str = i.toString();
+		let num_total = 0;
+		for (let j = 0; j < num_str.length; j++) {
+			let num_compare = parseInt(num_str);
+			let num_num = parseInt(num_str[j]);
+
+			num_total = num_total + Math.pow(num_num, 3);
+				
+
+			if(num_total == num_compare){
+				/*make sure unique numbers only are pushed*/
+				if(new_array.indexOf(num_compare) === -1) {
+				   new_array.push(num_compare);
+				}
+				
+			}
+		}
+
+
+
+	}
+  	
+  	return new_array;
+
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

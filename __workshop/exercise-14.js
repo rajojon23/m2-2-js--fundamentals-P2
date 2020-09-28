@@ -9,6 +9,8 @@
 // -----------------------------------------------------------------
 function countChar(str, char) {
   // str and char are both strings
+  let result = str.split(char).length-1;
+  return result;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

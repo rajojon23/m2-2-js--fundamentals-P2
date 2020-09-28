@@ -9,6 +9,32 @@
 // -----------------------------------------------------------------
 function filterNonUnique(arr) {
   // arr is an array of values of any type
+
+  	let new_array = []; 
+	arr.forEach(function(number){
+    	
+		 let counts = arr.filter(function(value){
+	    	return value === number;/*number is the number inside the original array*/
+		}).length;/*how many times is that number occuring in the array*/
+
+
+		 if(counts < 2){ /*only push those with one counts into the new array*/
+			new_array.push(number);
+		 }
+
+
+
+	});
+
+
+
+
+
+
+
+	return new_array;
+
+
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
